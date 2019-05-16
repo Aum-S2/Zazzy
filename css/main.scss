@@ -5,6 +5,9 @@ $colors: (
   rong: rgb(243, 245, 234)
 );
 
+$padding: 14px;
+$borders: 14px;
+
 @function color ($color-name){
   @return map-get($colors, $color-name)
 }
@@ -25,8 +28,23 @@ body {
       position: absolute;
       z-index: -1;
     }
+
+    header a {
+      color: #fff;
+      text-decoration: none;
+      padding: $padding;
+      display: block;
+      text-decoration: uppercase;
+    }
 }
 
-h1 {
-  color: #0059ff;
+main {
+  section#card {
+    background-color: rgb(255, 254, 192);
+    padding: 16px;
+    margin: 1.2em auto;
+    border-radius: $borders;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .2);
+    width: 80%;
+  }
 }

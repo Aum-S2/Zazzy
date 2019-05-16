@@ -18,7 +18,22 @@ body #bg {
   z-index: -1;
 }
 
-h1 {
-  color: #0059ff;
+body header a {
+  color: #fff;
+  text-decoration: none;
+  padding: 14px;
+  display: block;
+  -webkit-text-decoration: uppercase;
+          text-decoration: uppercase;
+}
+
+main section#card {
+  background-color: #fffec0;
+  padding: 16px;
+  margin: 1.2em auto;
+  border-radius: 14px;
+  -webkit-box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  width: 80%;
 }
 /*# sourceMappingURL=main.css.map */
