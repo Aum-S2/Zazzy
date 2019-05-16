@@ -2,6 +2,7 @@
 
 $colors: (
   primary: #ffee00,
+  primary-light: lighten(#ffee00, 30%),
   rong: rgb(243, 245, 234)
 );
 
@@ -40,11 +41,40 @@ body {
 
 main {
   section#card {
-    background-color: rgb(255, 254, 192);
+    background-color: rgb(255, 255, 227);
     padding: 16px;
     margin: 1.2em auto;
     border-radius: $borders;
     box-shadow: 0 8px 25px rgba(0, 0, 0, .2);
     width: 80%;
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: 10px;
+
+        span {
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          background-color: color(primary-light);
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+
+        strong {
+          display: inline-block;
+          margin-left: max(40px);
+          margin-top: 10px;
+        }
+        
+      }
+    }
+  }
+  section#primary {
+
   }
 }

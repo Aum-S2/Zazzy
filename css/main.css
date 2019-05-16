@@ -28,12 +28,37 @@ body header a {
 }
 
 main section#card {
-  background-color: #fffec0;
+  background-color: #ffffe3;
   padding: 16px;
   margin: 1.2em auto;
   border-radius: 14px;
   -webkit-box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
           box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
   width: 80%;
+}
+
+main section#card ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+main section#card ul li {
+  margin-bottom: 10px;
+}
+
+main section#card ul li span {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #fff899;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+main section#card ul li strong {
+  display: inline-block;
+  margin-left: 40px;
+  margin-top: 10px;
 }
 /*# sourceMappingURL=main.css.map */
