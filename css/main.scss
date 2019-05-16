@@ -3,7 +3,8 @@
 $colors: (
   primary: #ffee00,
   primary-light: lighten(#ffee00, 30%),
-  rong: rgb(243, 245, 234)
+  primary-dark: darken(#ffee00, 30%),
+  rong: rgb(243, 245, 237)
 );
 
 $padding: 14px;
@@ -22,7 +23,7 @@ body {
   margin: 0;
 
     #bg {
-      clip-path: polygon(100% 0, 100% 72%, 50% 100%, 0 100%, 0 0);
+      clip-path: polygon(100% 0, 100% 78%, 50% 100%, 0 100%, 0 0);
       background-color: color(primary);
       width: 100%;
       height: 100%;
@@ -31,11 +32,12 @@ body {
     }
 
     header a {
+      font-size: 1.8em;
       color: #fff;
       text-decoration: none;
       padding: $padding;
       display: block;
-      text-decoration: uppercase;
+      text-transform: uppercase;
     }
 }
 
@@ -70,11 +72,37 @@ main {
           margin-left: max(40px);
           margin-top: 10px;
         }
-        
+
       }
     }
   }
   section#primary {
+    color: #fff;
+    padding: $padding;
+    text-align: center;
+
+    h1 {
+      font-size: 2.8em;
+      margin-top: 10px;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 1.5em;
+    }
+
+    a {
+      color: color(primary-dark);
+      border-radius: $borders;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      background-color: color(rong);
+      display: block;
+      text-align: center;
+      margin: 50px auto 0 auto;
+      padding: $padding;
+    }
 
   }
 }
